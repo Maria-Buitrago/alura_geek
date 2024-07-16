@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack petcat</title>
+        <link rel="stylesheet" href="css/reset.css"> 
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/logo .jpeg">
+
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <h1 class="titulo-encabezado">Alura Geek </h1>
+            <h3 class="descripcion-contenido">cuidando mascotas</h3>
+        </header>
+
+        <!--
+        <main>
+            <div class="contenido-de-la-pag">
+                <h3 class="descripcion-contenido">cuidando mascotas</h3>
+            </div>
+        </main> -->
+
+        <div class="contenido-general">
+        <!-- Sección contenido de los cuadros -->
+        <section class="seccion-cuadros">
+            
+            <div class="marco-contenedor" data-lista>
+                
+                <div class="marco-fluor">
+                    <img src="img/comida.png.png"Imagen 1" class="imagen-cuadro">
+                    <p class="titulo-cuadro">comida deliciosa</p>
+                    <p class="tecnica">comida</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/peluqueria.png"Imagen 2" class="imagen-cuadro">
+                    <p class="titulo-cuadro">peluqueria de mascotas</p>
+                    <p class="tecnica">peluqueria </p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/casa.png.png" alt="Imagen 3" class="imagen-cuadro">
+                    <p class="titulo-cuadro">dormitorio para nuestras mascotas</p>
+                    <p class="tecnica">dormitorio </p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/productos.png.png" alt="Imagen 4" class="imagen-cuadro">
+                    <p class="titulo-cuadro">excelente productos</p>
+                    <p class="tecnica">productos</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/articulos de higine.jpg" alt="Imagen 5" class="imagen-cuadro">
+                    <p class="titulo-cuadro">articulos de higiene</p>
+                    <p class="tecnica">articulos</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                
+        
+            </div>
+            
+        </section>
+
+       
+        <section class="seccion-formulario">
+            <h2 class="titulo-formulario">producto </h2>
+
+            
+            <form class="formulario-agregar-obra" data-formulario>
+                <fieldset class="formulario-obra">
+                    <input name="titulo-obra" id="titulo" class="input-obra" placeholder="producto" type="text"
+                        data-titulo />
+                </fieldset>
+                <fieldset class="formulario-obra">
+                    <input name="tecnica-obra" id="tecnica" class="input-obra" placeholder="descripcion" type="text"
+                        data-tecnica />
+                </fieldset>
+                <fieldset class="formulario-obra">
+                    <input name="imagen-obra" id="imagen" class="input-obra" placeholder="URL de la imagen" type="text"
+                        data-imagen />
+                </fieldset>
+                <div class="botones-obra">
+                    <button type="submit" class="boton-enviar" id="btn">Enviar</button>
+                    <button type="reset" class="boton-limpiar" id="btn">Limpiar</button>
+                </div>
+            </form>
+
+        </section>
+        </div>
+        <footer class="pie-de-pagina">
+            <h1 class="titulo-encabezado">Alura Geek </h1>
+            <p class="copyright">Creado por &copy Snackpetcat - 2024</p>
+            <p class="copyright">Para Alura Latam - OracleNextEducation</p>
+    
+        </footer>
+        <script src="./js/mostrarCuadros.js" type="module"></script>
+        <script src="./js/crearCuadro.js" type="module"></script>
+    </body>
+</html>

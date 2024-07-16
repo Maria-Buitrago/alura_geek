@@ -1,0 +1,37 @@
+{
+  "cuadros": [
+    {
+      "id": "1",
+      "titulo": "comida deliciosa",
+      "tecnica": "comida ",
+      "imagen": "../img/comida.png.png"
+    },
+    {
+      "id": "2",
+      "titulo": "peluqueria de mascotas",
+      "tecnica": "peluqueria",
+      "imagen": "../img/peluqueria.png"
+    },
+
+    {
+      "id":"3",
+      "titulo": "dormitorio para nuestras mascotas",
+      "tecnica": "dormitorio",
+      "imagen": "../img/casa.png.png"
+    },
+    {
+      "id":"4",
+      "titulo":"excelente productos" ,
+      "tecnica":"productos" ,
+      "imagen": "../img/productos.png.png"
+    },
+    {
+      "id":"5",
+      "titulo":"articulos de higiene" ,
+      "tecnica":"articulos" ,
+      "imagen":"../img/articulos de higiene.jpg" 
+    }
+    
+  ]
+  
+}

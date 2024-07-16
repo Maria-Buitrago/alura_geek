@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+    --fondo-azul: #f56512;
+    --contenedor-general: lightblue;
+    --boton-enviar: #128bf5;
+    --boton-limpiar: #f56512;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+}
+    
+
+/*Encabezado de la página (header) y pie de pagina (footer)*/
+
+.encabezado, .pie-de-pagina{
+    background-color: var(--fondo-azul);
+    text-align: center;
+    padding: 1em 0;
+    color: #000000;
+    font-weight: bold;
+    /*text-shadow: 0 0 10px #b36cc9, 0 0 40px #b36cc9, 0 0 80px #b36cc9;*/
+    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    & h1 {
+        font-size: 40px;
+    }
+    & h3{
+        font-size: 24px;
+    }
+}
+
+
+/* Contenido general (sección cuadros y sección formulario*/
+.contenido-general{
+    display: flex;
+    background-color: var(--contenedor-general);
+}
+
+/* Sección de los cuadros*/
+.seccion-cuadros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*background-color: #121212;*/
+    font-family: Arial, sans-serif;
+}
+
+.marco-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-y: auto;
+    position: relative;
+    height: 100%;
+    align-self: flex-start;
+    margin-top: 0.1em;
+    
+}
+
+.marco-fluor {
+    position: relative;
+    padding: 10px;
+    /*border: 2px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;*/
+    border: 2px solid #fafafa;
+    box-shadow: 0 0 10px #fafafa, 0 0 20px #fafafa, 0 0 30px #fafafa;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    margin: 15px;
+}
+
+.imagen-cuadro {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 70%;
+    border-radius: 10px;
+}
+
+.titulo-cuadro {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.tecnica{
+    margin-top: 10px;
+    color: #d9f3b7;
+    font-size: 0.8em;
+}
+
+/* Botón con el icono de Papelera para eliminar el cuadro*/
+.eliminar {
+    background-color: transparent;
+    border: none;
+}
+
+.icono-papelera {
+    /*margin-top: auto;
+    margin-top: 5px;*/
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icono-papelera img {
+    width: 24px;
+    height: 24px;
+}
+
+.icono-papelera img:hover {
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+
+/* Sección del formulario */
+.seccion-formulario {
+    width: 35%;
+    align-self: flex-start;
+}
+
+.titulo-formulario {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.formulario-agregar-obra {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-obra::placeholder {
+    font-size: 15px;
+    margin-bottom: 0.5em;
+}
+
+.input-obra {
+    width: 100%;
+    height: 40px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*Personalización de los botones*/
+.botones-obra {
+    display: flex;
+    height: auto;
+    gap: 1em;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-enviar,
+.boton-limpiar {
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    text-align: center;
+    width: 30%;
+    margin: 1em;
+    border-style: none;
+    box-shadow: -.2em -.2em .4em black;
+    border-radius: 5px;
+    font-size: 0.9em;
+    height: 2em;
+}
+
+/*Boton enviar*/
+
+.boton-enviar {
+    background-color: var(--fondo-azul);
+    color: white;
+    font-weight: bold;
+}
+
+.boton-enviar:hover {
+    transform: scale(1.1);
+}
+
+/*Boton limpiar*/
+
+.boton-limpiar {
+    background-color: var(--boton-limpiar);
+    color: white;
+    font-weight: bold;
+}
+
+.boton-limpiar:hover {
+    transform: scale(1.1);
+}
+
+
+/*Pie de  página (footer)*/
+.pie-de-pagina{
+    & h1 {
+        font-size: 1.8em;
+    }
+    & h3{
+        font-size:1em;
+    }
+}
+.copyright {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Media querie */
+@media (max-width: 768px) {
+
+    .encabezado,
+    .pie-de-pagina {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        & h1{ font-size: 2em;}
+        & h3{ font-size: 1em;}
+    }
+    .contenido-general{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion-cuadros, .seccion-formulario {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .seccion-formulario {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .seccion-cuadros {
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .botones-obra {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }  
+}  
